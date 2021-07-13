@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:places/app/data/model/map_location.dart';
-import 'package:places/app/modules/maps/controllers/maps_controller.dart';
 import 'package:places/app/modules/maps/views/components/location_description_controller.dart';
 
 class LocationDescriptionPage extends GetView<LocationDesriptionController> {

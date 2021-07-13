@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:places/app/modules/maps/views/components/new_location_controller.dart';
 
 import '../controllers/maps_controller.dart';
 

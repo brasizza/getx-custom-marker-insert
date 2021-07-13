@@ -1,12 +1,9 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:places/app/core/loading_widget.dart';
-import 'package:places/app/modules/home/controllers/home_controller.dart';
 import 'package:places/app/modules/maps/controllers/maps_controller.dart';
 import 'package:places/app/modules/maps/views/components/new_location_controller.dart';
 import 'package:validatorless/validatorless.dart';

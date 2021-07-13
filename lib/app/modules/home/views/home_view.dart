@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttericon/font_awesome5_icons.dart';
 
 import 'package:get/get.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:google_maps_webservice/places.dart';
-import 'package:places/app/modules/maps/controllers/maps_controller.dart';
 import 'package:places/app/modules/maps/views/maps_view.dart';
 
 import '../controllers/home_controller.dart';
