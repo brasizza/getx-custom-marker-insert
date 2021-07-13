@@ -1,0 +1,38 @@
+name: places
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.1.4
+  build_runner: 2.0.6
+  google_maps_flutter: 2.0.6
+  google_maps_webservice: ^0.0.20-nullsafety.5
+  json_annotation: 4.0.1
+  json_serializable: 4.1.3
+  hive: 2.0.4
+  hive_flutter: 1.1.0
+  hive_generator: 1.1.0
+  path_provider: 2.0.2
+  fluttericon: 2.0.0
+  geolocator: 7.2.0+1
+  image_picker: 0.8.1+3
+  validatorless: 1.2.0
+  flutter_typeahead: 3.2.0
+
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  assets: 
+    - assets/
+    - assets/images/
+  uses-material-design: true
+
