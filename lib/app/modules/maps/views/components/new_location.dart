@@ -123,13 +123,16 @@ class NewLocationPage extends GetView<NewLocationController> {
                     ),
                   );
                   late PickedFile? _picked;
-                  Get.dialog(LoadingWidget());
-                  if (_source == 'camera') {
-                    _picked = (await ImagePicker().getImage(source: ImageSource.camera, preferredCameraDevice: CameraDevice.front));
-                  } else {
-                    _picked = (await ImagePicker().getImage(source: ImageSource.gallery));
+                  try {
+                    Get.dialog(LoadingWidget());
+                    if (_source == 'camera') {
+                      _picked = (await ImagePicker().getImage(source: ImageSource.camera, preferredCameraDevice: CameraDevice.front));
+                    } else {
+                      _picked = (await ImagePicker().getImage(source: ImageSource.gallery));
+                    }
+                  } on Exception catch (e) {
+                    print(e.toString());
                   }
-
                   Get.close(0);
                   controller.previewFile = _picked;
                 },

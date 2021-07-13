@@ -25,7 +25,7 @@ class HomeView extends GetView<HomeController> {
               textFieldConfiguration: TextFieldConfiguration(
                 controller: _searchController,
                 decoration: InputDecoration(
-                    hintText: "Search some adress",
+                    hintText: "Search some address",
                     prefixIcon: Icon(Icons.location_on, color: Colors.black),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20),

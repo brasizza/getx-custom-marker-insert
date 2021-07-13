@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:get/get.dart';
-import 'package:places/app/core/inicialize_app.dart';
+import 'package:places/app/core/initialize_app.dart';
 
 import 'app/routes/app_pages.dart';
 

@@ -14,7 +14,7 @@ class MapsView extends GetView<MapsController> {
               controller.userLocation.latitude,
               controller.userLocation.longitude,
             ),
-            zoom: 14,
+            zoom: 2,
           ),
           myLocationButtonEnabled: true,
           markers: controller.markers,
