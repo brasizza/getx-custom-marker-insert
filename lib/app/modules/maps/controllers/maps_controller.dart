@@ -42,14 +42,11 @@ class MapsController extends GetxController {
   Future<void> addNewPosition(LatLng position) async {
     await Get.delete<NewLocationController>();
     Get.put<NewLocationController>(NewLocationController());
-    bool? created = await Get.dialog(
+    await Get.dialog(
       Dialog(
         child: NewLocationPage(position),
       ),
     );
-
-    if ((created ?? false) == true) {
-    } else {}
   }
 
   Future<void> getMarkers() async {
