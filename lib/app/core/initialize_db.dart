@@ -1,5 +1,4 @@
 import 'package:get/instance_manager.dart';
-import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:places/app/core/consts.dart';
 import 'package:places/app/data/model/map_location.dart';

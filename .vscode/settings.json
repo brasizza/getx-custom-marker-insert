@@ -1,3 +1,4 @@
 {
-    "dart.flutterSdkPath": "/Users/marcusbrasizza/.asdf/installs/flutter/2.2.1-stable"
+    "dart.flutterSdkPath": "/Users/marcusbrasizza/.asdf/installs/flutter/2.2.1-stable",
+    "java.configuration.updateBuildConfiguration": "disabled"
 }

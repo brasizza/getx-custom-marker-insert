@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:image_picker/image_picker.dart';
@@ -122,13 +121,13 @@ class NewLocationPage extends GetView<NewLocationController> {
                       ],
                     ),
                   );
-                  late PickedFile? _picked;
+                  late XFile? _picked;
                   try {
                     Get.dialog(LoadingWidget());
                     if (_source == 'camera') {
-                      _picked = (await ImagePicker().getImage(source: ImageSource.camera, preferredCameraDevice: CameraDevice.front));
+                      _picked = (await ImagePicker().pickImage(source: ImageSource.camera, preferredCameraDevice: CameraDevice.front));
                     } else {
-                      _picked = (await ImagePicker().getImage(source: ImageSource.gallery));
+                      _picked = (await ImagePicker().pickImage(source: ImageSource.gallery));
                     }
                   } on Exception catch (e) {
                     print(e.toString());

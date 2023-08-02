@@ -13,9 +13,9 @@ class NewLocationController extends GetxController {
   Uint8List? get imageByte => this._imageByte.value;
   set imageByte(Uint8List? newValue) => this._imageByte.value = newValue;
 
-  Rxn<PickedFile> _previewFile = Rxn<PickedFile>();
-  PickedFile? get previewFile => this._previewFile.value;
-  set previewFile(PickedFile? newValue) {
+  Rxn<XFile> _previewFile = Rxn<XFile>();
+  XFile? get previewFile => this._previewFile.value;
+  set previewFile(XFile? newValue) {
     this._previewFile.value = newValue;
     if (newValue != null) {
       newValue.readAsBytes().then((value) async {
